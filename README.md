@@ -1,2 +1,2 @@
-# javascript-cheetsheet
-Javascript Cheet Sheet
+# javaScript CheetSheet
+Javascript CheetSheet
