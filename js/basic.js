@@ -1,5 +1,5 @@
 /* JavaScript CheetSheet
- * <https://github.com/jacobxperez/full-screen-jquery-content-slider>
+ * <https://github.com/jacobxperez/javascript-cheetsheet>
  * Copyright (C) 2022 Jacob Perez <jacobxperez@gmx.com>
  * Licensed under the Apache License, Version 2.0
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -14,55 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const constVariable = "const variable";
 
 
-    // Ternary Operator
-    let price = 10.5;
-    let day = "Monday";
+    // String Concatenation
+    let service = 'credit card';
+    let month = 'May 30th';
+    let displayText = 'Your ' + service + ' bill is due on ' + month + '.';
 
-    day === "Monday" ? price -= 1.5 : price += 1.5;
-
-
-    // if else Statement
-    const isTaskCompleted = false;
-
-    if (isTaskCompleted) {
-        console.log('Task completed');
-    } else {
-        console.log('Task incomplete');
-    }
+    console.log(displayText);
+    // Prints: Your credit card bill is due on May 30th.
 
 
-    // else if Clause
-    const size = 10;
-
-    if (size > 100) {
-        console.log('Big');
-    } else if (size > 20) {
-        console.log('Medium');
-    } else if (size > 4) {
-        console.log('Small');
-    } else {
-        console.log('Tiny');
-    }
-
-
-    // switch Statement
-    const food = 'salad';
-
-    switch (food) {
-        case 'oyster':
-            console.log('The taste of the sea 🦪');
-            break;
-        case 'pizza':
-            console.log('A delicious pie 🍕');
-            break;
-        default:
-            console.log('Enjoy your meal');
-    }
-
-
-    // For loop
-    for (var i = 0; i < variable; i++) {
-        // add code
-    } // end for loop
+    // Template Literals
+    let name = "Jacob";
+    console.log(`Hello, ${name}`);
+    // Prints: Hello, Jacob
+    console.log(`Billy is ${6+8} years old.`);
+    // Prints: Billy is 14 years old.
 
 });
