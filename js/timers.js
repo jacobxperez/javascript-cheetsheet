@@ -19,7 +19,6 @@ function drawText() {
 }
 
 var intervalID = setInterval(drawText, 2000);
-
 // stop time looping
 // clearInterval(intervalID);
 
@@ -30,7 +29,6 @@ function animationLoop() {
 
     requestAnimationFrame(animationLoop);
 }
-
 // start animation loop
 animationLoop();
 
