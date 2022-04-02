@@ -1,4 +1,4 @@
-# javaScript CheetSheet
+# JavaScript CheetSheet
 
 Javascript CheetSheet
 
