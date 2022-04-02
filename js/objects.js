@@ -45,15 +45,3 @@ function Circle(radius) {
 };
 
 const another = new Circle(1);
-
-
-// Class Constructor
-class Surgeon {
-    constructor(name, department) {
-        this.name = name;
-        this.department = department;
-    }
-}
-
-// Instance of class Surgeon
-const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
