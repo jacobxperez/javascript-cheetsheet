@@ -54,3 +54,6 @@ class Surgeon {
         this.department = department;
     }
 }
+
+// Instance of class Surgeon
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
