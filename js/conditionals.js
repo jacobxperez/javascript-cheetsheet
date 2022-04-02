@@ -6,10 +6,10 @@
 ------------------------------------------------------------------------------*/
 
 // Logical Operator ||
-true || false;        // true
-10 > 5 || 10 > 20;    // true
-false || false;       // false
-10 > 100 || 10 > 20;  // false
+true || false; // true
+10 > 5 || 10 > 20; // true
+false || false; // false
+10 > 100 || 10 > 20; // false
 
 
 // Logical Operator &&
@@ -22,18 +22,18 @@ true && false; // false
 // Logical Operator !
 let lateToWork = true;
 let oppositeValue = !lateToWork;
- 
-console.log(oppositeValue); 
+
+console.log(oppositeValue);
 // Prints: false
 
 
 // Comparison Operators
-1 > 3       // false
-3 > 1       // true
-250 >= 250  // true
-1 === 1     // true
-1 === 2     // false
-1 === '1'   // false
+1 > 3 // false
+3 > 1 // true
+250 >= 250 // true
+1 === 1 // true
+1 === 2 // false
+1 === '1' // false
 
 
 // Ternary Operator
