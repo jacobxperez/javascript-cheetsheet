@@ -9,9 +9,46 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Variable declaration
-    var varVariable = "var variable";
-    let letVariable = "let variable";
-    const constVariable = "const variable";
+    let a = "Tammy";
+    const b = false;
+    var c = 3;
+    console.log(a, b, c);
+    // Tammy, false, 3
+
+    // Print messages to the console
+    console.log('Hi there!');
+    // Prints: Hi there!
+
+
+    // Methods
+    console.log(Math.floor(5.95));
+    // Math is the library, Prints: 5 
+
+
+    // Returns the number of characters that make up the string.
+    let message = 'good nite';
+    console.log(message.length);
+    // Prints: 9
+    console.log('howdy'.length);
+    // Prints: 5
+
+
+    // Assignment Operators
+    // assigns a value to its left operand based on the value of its right operand.
+    let number = 100;
+    // Both statements will add 10
+    number = number + 10;
+    number += 10;
+    console.log(number);
+    // Prints: 120
+
+
+    // String Interpolation
+    let age = 7;
+    // String concatenation
+    'Tommy is ' + age + ' years old.';
+    // String interpolation
+    `Tommy is ${age} years old.`;
 
 
     // String Concatenation
