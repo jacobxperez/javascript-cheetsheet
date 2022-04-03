@@ -5,70 +5,24 @@
  * http://www.apache.org/licenses/LICENSE-2.0
 ------------------------------------------------------------------------------*/
 
-// The .findIndex() Method
-const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+// Accessing an array element
+const myArray = [100, 200, 300];
 
-const foundAnimal = animals.findIndex(animal => {
-    return animal === 'elephant';
-});
-
-const startsWithS = animals.findIndex(animal => {
-    return animal[0] === 's' ? true : false;
-});
+console.log(myArray[0]); // 100
+console.log(myArray[1]); // 200
+console.log(myArray[2]); // 300
 
 
-// The .forEach() Method
-const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
-
-// Iterate over fruits below
-fruits.forEach(function (fruitCall) {
-    console.log('I want to eat a ' + fruitCall);
-});
-
-
-// The .map() Method
-const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
-
-// Create the secretMessage array below
-const secretMessage = animals.map(animal => animal[0]);
-
-console.log(secretMessage.join(''));
-
-console.log(secretMessage.join(''));
+// Adding a single element:
+const cart = ['apple', 'orange'];
+cart.push('pear'); 
+// Adding multiple elements:
+const numbers = [1, 2];
+numbers.push(3, 4, 5);
 
 
-// Create the smallNumbers array below
-const bigNumbers = [100, 200, 300, 400, 500];
-
-const smallNumbers = bigNumbers.map(num => num / 100);
-
-console.log(smallNumbers);
-
-
-// The .filter() Method
-const randomNumbers = [375, 200, 3.14, 7, 13, 852];
-
-// Call .filter() on randomNumbers below
-const smallNumbers = randomNumbers.filter(num => {
-    return num < 250;
-})
-
-
-const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
-
-// Call .filter() on favoriteWords below
-const longFavoriteWords = favoriteWords.filter(word => {
-    return word.length > 7;
-});
-
-
-// The .reduce() Method
-const newNumbers = [1, 3, 5, 7];
-
-const newSum = newNumbers.reduce((accumulator, currentValue) => {
-    console.log('The value of accumulator: ', accumulator);
-    console.log('The value of currentValue: ', currentValue);
-    return accumulator + currentValue;
-}, 10);
-
-console.log(newSum)
+// Removes the last element from an array and returns that element
+const ingredients = ['eggs', 'flour', 'chocolate'];
+ 
+const poppedIngredient = ingredients.pop(); // 'chocolate'
+console.log(ingredients); // ['eggs', 'flour']
