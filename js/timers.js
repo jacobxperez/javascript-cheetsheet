@@ -7,39 +7,36 @@
 
 // Delaying with setTimeout
 function showMessage() {
-    console.log("delayd for 5 seconds");
+    console.log('delayd for 5 seconds')
 }
 
-var timeID = setTimeout(showMessage, 5000);
-
+var timeID = setTimeout(showMessage, 5000)
 
 // Looping with setInterval
 function drawText() {
-    console.log("looping text");
+    console.log('looping text')
 }
 
-var intervalID = setInterval(drawText, 2000);
+var intervalID = setInterval(drawText, 2000)
 // stop time looping
 // clearInterval(intervalID);
-
 
 // Animating smoothly
 function animationLoop() {
     // animation related code
 
-    requestAnimationFrame(animationLoop);
+    requestAnimationFrame(animationLoop)
 }
 // start animation loop
-animationLoop();
-
+animationLoop()
 
 // Stop requestAnimationFrame
-var requestID;
+var requestID
 
 function animationLoop() {
     // animation related code
 
-    requestID = requestAnimationFrame(animationLoop);
+    requestID = requestAnimationFrame(animationLoop)
 }
 
-cancelAnimationFrame(requestID);
+cancelAnimationFrame(requestID)

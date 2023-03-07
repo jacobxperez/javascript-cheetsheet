@@ -8,81 +8,77 @@
 // Static Methods
 class Dog {
     constructor(name) {
-        this._name = name;
+        this._name = name
     }
     introduce() {
-        console.log('This is ' + this._name + ' !');
+        console.log('This is ' + this._name + ' !')
     }
     // A static method
     static bark() {
-        console.log('Woof!');
+        console.log('Woof!')
     }
 }
 
-const myDog = new Dog('Buster');
-myDog.introduce();
+const myDog = new Dog('Buster')
+myDog.introduce()
 // Calling the static method
-Dog.bark();
-
+Dog.bark()
 
 // Class
 class Song {
     constructor() {
-        this.title;
-        this.author;
+        this.title
+        this.author
     }
 
     play() {
-        console.log('Song playing!');
+        console.log('Song playing!')
     }
 }
 
-const mySong = new Song();
-mySong.play();
-
+const mySong = new Song()
+mySong.play()
 
 // Class Constructor
 class Song {
     constructor(title, artist) {
-        this.title = title;
-        this.artist = artist;
+        this.title = title
+        this.artist = artist
     }
 }
 
-const mySong = new Song('Bohemian Rhapsody', 'Queen');
-console.log(mySong.title);
-
+const mySong = new Song('Bohemian Rhapsody', 'Queen')
+console.log(mySong.title)
 
 // Class Methods
 class Song {
     play() {
-        console.log('Playing!');
+        console.log('Playing!')
     }
 
     stop() {
-        console.log('Stopping!');
+        console.log('Stopping!')
     }
-};
-
+}
 
 // extends
 // Parent class
 class Media {
     constructor(info) {
-        this.publishDate = info.publishDate;
-        this.name = info.name;
+        this.publishDate = info.publishDate
+        this.name = info.name
     }
 }
 // Child class
 class Song extends Media {
     constructor(songData) {
-        super(songData);
-        this.artist = songData.artist;
+        super(songData)
+        this.artist = songData.artist
     }
 }
 
 const mySong = new Song({
     artist: 'Queen',
     name: 'Bohemian Rhapsody',
-    publishDate: 1975
-});
+    publishDate: 1975,
+})

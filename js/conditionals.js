@@ -6,26 +6,23 @@
 ------------------------------------------------------------------------------*/
 
 // Logical Operator ||
-true || false; // true
-10 > 5 || 10 > 20; // true
-false || false; // false
-10 > 100 || 10 > 20; // false
-
+true || false // true
+10 > 5 || 10 > 20 // true
+false || false // false
+10 > 100 || 10 > 20 // false
 
 // Logical Operator &&
-true && true; // true
-1 > 2 && 2 > 1; // false
-true && false; // false
-4 === 4 && 3 > 1; // true
-
+true && true // true
+1 > 2 && 2 > 1 // false
+true && false // false
+4 === 4 && 3 > 1 // true
 
 // Logical Operator !
-let lateToWork = true;
-let oppositeValue = !lateToWork;
+let lateToWork = true
+let oppositeValue = !lateToWork
 
-console.log(oppositeValue);
+console.log(oppositeValue)
 // Prints: false
-
 
 // Comparison Operators
 1 > 3 // false
@@ -35,48 +32,44 @@ console.log(oppositeValue);
 1 === 2 // false
 1 === '1' // false
 
-
 // Ternary Operator
-let price = 10.5;
-let day = "Monday";
+let price = 10.5
+let day = 'Monday'
 
-day === "Monday" ? price -= 1.5 : price += 1.5;
-
+day === 'Monday' ? (price -= 1.5) : (price += 1.5)
 
 // if else Statement
-const isTaskCompleted = false;
+const isTaskCompleted = false
 
 if (isTaskCompleted) {
-    console.log('Task completed');
+    console.log('Task completed')
 } else {
-    console.log('Task incomplete');
+    console.log('Task incomplete')
 }
-
 
 // else if Clause
-const size = 10;
+const size = 10
 
 if (size > 100) {
-    console.log('Big');
+    console.log('Big')
 } else if (size > 20) {
-    console.log('Medium');
+    console.log('Medium')
 } else if (size > 4) {
-    console.log('Small');
+    console.log('Small')
 } else {
-    console.log('Tiny');
+    console.log('Tiny')
 }
 
-
 // Switch Statement
-const food = 'salad';
+const food = 'salad'
 
 switch (food) {
     case 'oyster':
-        console.log('The taste of the sea 🦪');
-        break;
+        console.log('The taste of the sea 🦪')
+        break
     case 'pizza':
-        console.log('A delicious pie 🍕');
-        break;
+        console.log('A delicious pie 🍕')
+        break
     default:
-        console.log('Enjoy your meal');
+        console.log('Enjoy your meal')
 }

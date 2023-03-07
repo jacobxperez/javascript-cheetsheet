@@ -8,40 +8,38 @@
 // Object literal
 const person = {
     getName: function () {
-        return "Name is " + this.firstName + " " + this.lastName;
-    }
-};
+        return 'Name is ' + this.firstName + ' ' + this.lastName
+    },
+}
 
-const funnyGuy = Object.create(person);
-funnyGuy.firstName = "Conan";
-funnyGuy.lastName = "O'Brian";
-console.log(funnyGuy);
+const funnyGuy = Object.create(person)
+funnyGuy.firstName = 'Conan'
+funnyGuy.lastName = "O'Brian"
+console.log(funnyGuy)
 
-const newGuy = Object.create(person);
-newGuy.firstName = "Jacob";
-newGuy.lastName = "Perez";
-console.log(newGuy);
-
+const newGuy = Object.create(person)
+newGuy.firstName = 'Jacob'
+newGuy.lastName = 'Perez'
+console.log(newGuy)
 
 // Object Factory
 function createCircle(radius) {
     return {
         radius,
         draw: function () {
-            console.log("draw");
-        }
+            console.log('draw')
+        },
     }
-};
+}
 
-const circle = createCircle(1);
-
+const circle = createCircle(1)
 
 // Object Constructor
 function Circle(radius) {
-    this.radius = radius;
+    this.radius = radius
     this.draw = function () {
-        console.log("draw");
+        console.log('draw')
     }
-};
+}
 
-const another = new Circle(1);
+const another = new Circle(1)
